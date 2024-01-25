@@ -77,5 +77,9 @@
             @yield('content')
         </main>
     </div>
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    <script type="text/javascript">
+    @yield('javascript')
+    </script>
 </body>
 </html>

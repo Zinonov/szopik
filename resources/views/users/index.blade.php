@@ -21,6 +21,11 @@
                     <td>{{$user['name']}}</td>
                     <td>{{$user['surname']}}</td>
                     <td>{{$user['phone_number']}}</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm">
+                            X
+                        </button>
+                    </td>
                 </tr>
             @endforeach
             </tbody>
@@ -28,3 +33,6 @@
         {{$users->links()}}
     </div>
 @endsection
+@section('javascript')
+alert('test2');
+    @endsection
